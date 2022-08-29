@@ -20,7 +20,7 @@ jobs:
       with:
         repository: stefanzweig/scratch-db
         path: scratch-db
-        token: ${{ secrets.GITHUB_TOKEN }}        
+        token: ${{ secrets.MY_PAT }}        
     - name: Set up Python
       uses: actions/setup-python@v1
       with:
