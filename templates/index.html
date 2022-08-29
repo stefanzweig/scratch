@@ -47,7 +47,7 @@ h1 {
 {% endblock %}
 
 {% block body %}
-{% set til_count = sql("select count(*) from TIL", database="tils")[0][0] %}
+{% set til_count = sql("select count(*) from TIL", database="scratch")[0][0] %}
 <h1>stefanzweig: TIL</h1>
 <p>Things I've learned, collected in <a href="https://github.com/stefanzweig/scratch">stefanzweig/scratch</a>. You may also enjoy <a href="https://stefanzweigillison.net/">my blog</a>.</p>
 
