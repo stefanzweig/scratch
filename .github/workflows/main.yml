@@ -15,12 +15,11 @@ jobs:
       with:
         fetch-depth: 0
         path: main
-    - name: Checkout til-db
+    - name: Checkout scratch-db
       uses: actions/checkout@v2
       with:
         repository: stefanzweig/scratch-db
-        path: scratch-db
-        token: ${{ secrets.MY_PAT }}        
+        token: ${{ secrets.GITHUB_TOKEN }}        
     - name: Set up Python
       uses: actions/setup-python@v1
       with:
