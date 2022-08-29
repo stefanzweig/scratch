@@ -44,3 +44,40 @@ jobs:
         pip install -r main/requirements.txt
     - name: Install npm dependencies
       run: sudo npm install -g puppeteer-cli --unsafe-perm=true
+    - name: Download previous database unless REBUILD in commit message
+      if: |-
+        !contains(github.event.head_commit.message, 'REBUILD')
+      run: curl --fail -o main/scratch.db https://raw.githubusercontent.com/stefanzweig/scratch-db/main/scratch.db
+      continue-on-error: true
+    - name: Build database
+      run: |-
+        cd main
+        python build_database.py
+    - name: Soundness check
+      run: |-
+        cd main
+        datasette . --get / | grep "Stefan Scratches"
+    - name: Generate missing screenshots
+      run: |-
+        cd main
+        python generate_screenshots.py
+    - name: Update README
+      run: |-
+        cd main
+        python update_readme.py --rewrite
+        cat README.md
+    - name: Commit and push if README changed
+      run: |-
+        cd main
+        git diff
+        git config --global user.email "readme-bot@zweig.net"
+        git config --global user.name "README-bot"
+        git diff --quiet || (git add README.md && git commit -m "Updated README")
+        git push
+    - name: Save scratch.db to stefanzweig/scratch-db
+      run: |-
+        cd scratch-db
+        cp ../main/scratch.db .
+        git add scratch.db
+        git commit --amend --no-edit
+        git push --force
