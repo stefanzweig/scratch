@@ -79,14 +79,14 @@ h1 {
 </form>
 
 <p><strong>Browse by topic:</strong>
-{% for row in sql("select topic, count(*) as num_tils from til group by topic order by topic", database="tils") %}
+{% for row in sql("select topic, count(*) as num_tils from til group by topic order by topic", database="scratch") %}
   <a title="{{ row.num_tils }} TIL{{ "s" if row.num_tils > 1 else "" }}" href="/{{ row.topic }}">{{ row.topic }}</a> {{ row.num_tils }}{% if not loop.last %} &middot;{% endif %}
 {% endfor %}
 </p>
 
 <h2>Recent TILs</h2>
 
-{% for til in sql("select * from til order by created_utc desc limit 30", database="tils") %}
+{% for til in sql("select * from til order by created_utc desc limit 30", database="scratch") %}
     <h3><span class="topic"><a href="/{{ til.topic }}">{{ til.topic }}</a></span> <a href="/{{ til.topic }}/{{ til.slug }}">{{ til.title }}</a> - {{ til.created[:10] }}</h3>
     {{ first_paragraph(til["html"]).replace("</p>", " &#8230; </p>")|safe }}
 {% endfor %}
