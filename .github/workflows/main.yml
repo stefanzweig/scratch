@@ -90,7 +90,7 @@ jobs:
         datasette publish vercel scratch.db fixtures.db \
           --token $NOW_TOKEN \
           --project scratch \
-          --scope datasette \
+          --scope stefanzweig \
           --metadata metadata.yaml \
           --static static:static \
           --install datasette-template-sql \
