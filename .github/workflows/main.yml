@@ -19,7 +19,7 @@ jobs:
       uses: actions/checkout@v2
       with:
         repository: stefanzweig/scratch-db
-        token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}        
+        token: ${{ secrets.scratch-db }}        
     - name: Set up Python
       uses: actions/setup-python@v1
       with:
