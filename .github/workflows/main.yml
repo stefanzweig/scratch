@@ -9,18 +9,6 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - name: Check out repo
-      uses: actions/checkout@v2
-      # We need full history to introspect created/updated:
-      with:
-        fetch-depth: 0
-        path: main
-    - name: Checkout til-db
-      uses: actions/checkout@v2
-      with:
-        repository: simonw/til-db
-        path: til-db
-        token: ${{ secrets.PERSONAL_ACCESS_TOKEN_FOR_PUSH }}
     - name: Set up Python
       uses: actions/setup-python@v1
       with:
