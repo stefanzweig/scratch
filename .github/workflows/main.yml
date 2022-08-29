@@ -87,7 +87,7 @@ jobs:
       run: |-
         cd main
         wget https://latest.datasette.io/fixtures.db
-        datasette publish vercel tils.db fixtures.db \
+        datasette publish vercel scratch.db fixtures.db \
           --token $NOW_TOKEN \
           --project scratch \
           --scope datasette \
