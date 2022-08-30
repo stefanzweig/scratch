@@ -1,9 +1,5 @@
-# scratch
+<!-- count starts --><!-- count ends -->
 
-草稿箱
+<!-- index starts -->
 
-没啥事情
-
-TOKEN搞不定
-
-好像可以搞定了
+<!-- index ends -->
