@@ -34,7 +34,7 @@ databases:
         title: Stefan Zweig TIL
         sql: |-
           SELECT
-            'tag:til.zweig.net,2020-04-30:' || path as atom_id,
+            'tag:scratch.zweig.net,2020-04-30:' || path as atom_id,
             title as atom_title,
             'https://scratch.zweig.net/' || topic || '/' || slug as atom_link,
             created_utc as atom_updated,
