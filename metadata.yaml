@@ -34,7 +34,7 @@ databases:
         title: Stefan Zweig TIL
         sql: |-
           SELECT
-            'tag:scratch-gamma.vercel.app:' || path as atom_id,
+            'tag:scratch-gamma.vercel.app,2022-08-28:' || path as atom_id,
             title as atom_title,
             'https://scratch-gamma.vercel.app/' || topic || '/' || slug as atom_link,
             created_utc as atom_updated,
