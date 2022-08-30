@@ -34,13 +34,13 @@ databases:
         title: Stefan Zweig TIL
         sql: |-
           SELECT
-            'tag:scratch-gamma.vercel.app,2020-04-30:' || path as atom_id,
+            'tag:scratch-gamma.vercel.app:' || path as atom_id,
             title as atom_title,
             'https://scratch-gamma.vercel.app/' || topic || '/' || slug as atom_link,
             created_utc as atom_updated,
             html as atom_content_html,
             'Stefan Zweig' as atom_author_name,
-            'https://zweig.net/' as atom_author_uri
+            'https://scratch-gamma.vercel.app/' as atom_author_uri
           FROM
             til
           order by
