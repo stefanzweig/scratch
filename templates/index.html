@@ -51,7 +51,7 @@ h1 {
 <h1>My Scratches</h1>
 <p>Things I've learned, collected in <a href="https://github.com/stefanzweig/scratch">stefanzweig/scratch</a>. You may also enjoy <a href="https://zweig.net/">my blog</a>.</p>
 
-<p><a style="text-decoration: none" href="/tils/feed.atom" title="Atom feed"><svg xmlns="http://www.w3.org/2000/svg" width="14px" height="14px" viewBox="0 0 256 256">
+<!-- <p><a style="text-decoration: none" href="/tils/feed.atom" title="Atom feed"><svg xmlns="http://www.w3.org/2000/svg" width="14px" height="14px" viewBox="0 0 256 256">
     <defs>
     <linearGradient id="a" x1=".1" x2=".9" y1=".1" y2=".9">
         <stop offset="0" stop-color="#E3702D" />
@@ -69,14 +69,14 @@ h1 {
 <circle cx="68" cy="189" r="24" fill="#FFF" />
 <path fill="#FFF" d="M160 213h-34a82 82 0 0 0-82-82V97a116 116 0 0 1 116 116z" />
 <path fill="#FFF" d="M184 213A140 140 0 0 0 44 73V38a175 175 0 0 1 175 175z" />
-    </svg> Atom feed</a></p>
+    </svg> Atom feed</a></p> -->
 
-<form action="/tils/search">
+<!-- <form action="/tils/search">
     <p>
         <input type="search" name="q" placeholder="Search {{ til_count }} TILs">
         <input type="submit" value="Search">
     </p>
-</form>
+</form> -->
 
 <p><strong>Browse by topic:</strong>
 {% for row in sql("select topic, count(*) as num_tils from til group by topic order by topic", database="scratch") %}
