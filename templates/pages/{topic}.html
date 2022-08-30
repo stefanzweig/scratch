@@ -2,10 +2,10 @@
 
 {% set tils = sql("""
     select * from til where topic = :topic order by created_utc desc
-""", {"topic": topic}, database="tils")
+""", {"topic": topic}, database="scratch")
 %}
 
-{% block title %}Simon Willison: TILs on {{ topic }}{% endblock %}<!DOCTYPE html>
+{% block title %}Stefan Zweig: TILs on {{ topic }}{% endblock %}<!DOCTYPE html>
 
 {% block body %}
 
@@ -13,7 +13,7 @@
     {{ raise_404("No TILs found") }}
 {% endif %}
 
-<h1>Simon Willison: TILs on {{ topic }}</h1>
+<h1>Stefan Zweig: TILs on {{ topic }}</h1>
 
 {% for til in tils %}
     <h3><span class="topic">{{ til.topic }}</span> <a href="/{{ til.topic }}/{{ til.slug }}">{{ til.title }}</a> - {{ til.created[:10] }}</h3>
