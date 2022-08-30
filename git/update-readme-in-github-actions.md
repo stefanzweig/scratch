@@ -1,6 +1,6 @@
 The command for the github actions.
 
-```yaml
+```
 - name: Commit and push if README changed
     run: |-
     cd main
