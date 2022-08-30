@@ -86,8 +86,8 @@ jobs:
         NOW_TOKEN: ${{ secrets.NOW_TOKEN }}
       run: |-
         cd main
-        wget https://latest.datasette.io/fixtures.db
-        datasette publish vercel scratch.db fixtures.db \
+        # wget https://latest.datasette.io/fixtures.db
+        datasette publish vercel scratch.db \
           --token $NOW_TOKEN \
           --project scratch \
           --scope stefanzweig \
