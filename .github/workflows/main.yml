@@ -9,6 +9,11 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+    - name: install fonts
+      run: |
+        sudo apt install wqy-microhei-fonts.noarch -y      
+        sudo apt install wqy-unibit-fonts.noarch -y      
+        sudo apt install wqy-zenhei-fonts.noarch -y      
     - name: Check out repo
       uses: actions/checkout@v2
       # We need full history to introspect created/updated:
