@@ -1,9 +1,10 @@
-<!-- count starts -->3<!-- count ends -->
+<!-- count starts -->4<!-- count ends -->
 
 <!-- index starts -->
 ## vim
 
 * [Mouse support in vim](https://github.com/stefanzweig/scratch/blob/main/vim/mouse-support-in-vim.md) - 2022-08-29
+* [test in English and Chinese](https://github.com/stefanzweig/scratch/blob/main/vim/test-in-both-langs.md) - 2022-08-31
 
 ## git
 
