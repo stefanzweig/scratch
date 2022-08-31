@@ -11,9 +11,7 @@ jobs:
     steps:
     - name: install fonts
       run: |
-        sudo apt-get -y install fonts-wqy-microhei
-        sudo apt-get -y install fonts-wqy-unibit
-        sudo apt-get -y install fonts-wqy-zenhei     
+        sudo apt-get -y install fonts-wqy-microhei    
     - name: Check out repo
       uses: actions/checkout@v2
       # We need full history to introspect created/updated:
