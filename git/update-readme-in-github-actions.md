@@ -1,4 +1,6 @@
-The command for the github actions.
+# The command for the github actions.
+
+I copied it from simon willision's til build.yaml file. 
 
 ```
 - name: Commit and push if README changed
