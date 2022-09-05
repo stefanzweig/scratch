@@ -92,7 +92,7 @@ jobs:
         # wget https://latest.datasette.io/fixtures.db
         datasette publish vercel scratch.db \
           --token $NOW_TOKEN \
-          --project scratch \
+          --project blogs \
           --scope stefanzweig \
           --metadata metadata.yaml \
           --static static:static \
