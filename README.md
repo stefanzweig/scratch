@@ -1,4 +1,4 @@
-<!-- count starts -->5<!-- count ends -->
+<!-- count starts -->6<!-- count ends -->
 
 <!-- index starts -->
 ## vim
@@ -20,4 +20,8 @@
 ## reading
 
 * [How I Side Project](https://github.com/stefanzweig/scratch/blob/main/reading/how-i-side-project.md) - 2022-10-07
+
+## django
+
+* [How do I convert django queryset into list of dictionary](https://github.com/stefanzweig/scratch/blob/main/django/how-do-i-convert-django-queryset-into-list-of-dict.md) - 2022-10-13
 <!-- index ends -->
