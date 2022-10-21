@@ -1,4 +1,4 @@
-<!-- count starts -->8<!-- count ends -->
+<!-- count starts -->9<!-- count ends -->
 
 <!-- index starts -->
 ## vim
@@ -25,6 +25,7 @@
 
 * [How do I convert django queryset into list of dictionary](https://github.com/stefanzweig/scratch/blob/main/django/how-do-i-convert-django-queryset-into-list-of-dict.md) - 2022-10-13
 * [Django-Apscheduler schedule a job](https://github.com/stefanzweig/scratch/blob/main/django/apscheduler.md) - 2022-10-14
+* [Bulk Create](https://github.com/stefanzweig/scratch/blob/main/django/bulk_create.md) - 2022-10-21
 
 ## emacs
 
