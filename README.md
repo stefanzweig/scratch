@@ -1,4 +1,4 @@
-<!-- count starts -->9<!-- count ends -->
+I have written <!-- count starts -->9<!-- count ends -->small tips here. Some of them are in draft.
 
 <!-- index starts -->
 ## vim
