@@ -1,4 +1,4 @@
-I have written <!-- count starts -->11<!-- count ends -->small tips here. Some of them are in draft.
+I have written <!-- count starts -->11<!-- count ends --> small tips here. Some of them are in draft.
 
 <!-- index starts -->
 ## vim
