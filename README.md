@@ -1,4 +1,4 @@
-I have written <!-- count starts -->9<!-- count ends -->small tips here. Some of them are in draft.
+I have written <!-- count starts -->11<!-- count ends -->small tips here. Some of them are in draft.
 
 <!-- index starts -->
 ## vim
@@ -30,4 +30,12 @@ I have written <!-- count starts -->9<!-- count ends -->small tips here. Some of
 ## emacs
 
 * [How to get a link in a long line](https://github.com/stefanzweig/scratch/blob/main/emacs/get-structural-href-link-in-long-line.md) - 2022-10-16
+
+## datasette
+
+* [Use SQLite-Utils Analyzing the Data in Table](https://github.com/stefanzweig/scratch/blob/main/datasette/sqlite-utils-in-memory.md) - 2022-10-26
+
+## python
+
+* [Attrs and Dataclass](https://github.com/stefanzweig/scratch/blob/main/python/attrs-and-dataclass.md) - 2022-10-26
 <!-- index ends -->
