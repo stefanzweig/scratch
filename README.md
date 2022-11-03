@@ -1,4 +1,4 @@
-I have written <!-- count starts -->11<!-- count ends --> small tips here. Some of them are in draft.
+I have written <!-- count starts -->12<!-- count ends --> small tips here. Some of them are in draft.
 
 <!-- index starts -->
 ## vim
@@ -30,6 +30,7 @@ I have written <!-- count starts -->11<!-- count ends --> small tips here. Some 
 ## emacs
 
 * [How to get a link in a long line](https://github.com/stefanzweig/scratch/blob/main/emacs/get-structural-href-link-in-long-line.md) - 2022-10-16
+* [How to set the size of frame](https://github.com/stefanzweig/scratch/blob/main/emacs/set-frame-size.md) - 2022-11-03
 
 ## datasette
 
