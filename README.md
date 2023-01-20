@@ -1,4 +1,4 @@
-I have written <!-- count starts -->12<!-- count ends --> small tips here. Some of them are in draft.
+I have written <!-- count starts -->13<!-- count ends --> small tips here. Some of them are in draft.
 
 <!-- index starts -->
 ## vim
@@ -13,13 +13,13 @@ I have written <!-- count starts -->12<!-- count ends --> small tips here. Some 
 
 * [How to sync the migration files in devlopment with django?](https://github.com/stefanzweig/scratch/blob/main/developmemt/how-to-sync-migrations-in-django.md) - 2022-09-17
 
-## podcast
-
-* [Talk Python To Me](https://github.com/stefanzweig/scratch/blob/main/podcast/talk-python-to-me.md) - 2022-10-07
-
 ## reading
 
 * [How I Side Project](https://github.com/stefanzweig/scratch/blob/main/reading/how-i-side-project.md) - 2022-10-07
+
+## podcast
+
+* [Talk Python To Me](https://github.com/stefanzweig/scratch/blob/main/podcast/talk-python-to-me.md) - 2022-10-07
 
 ## django
 
@@ -32,11 +32,15 @@ I have written <!-- count starts -->12<!-- count ends --> small tips here. Some 
 * [How to get a link in a long line](https://github.com/stefanzweig/scratch/blob/main/emacs/get-structural-href-link-in-long-line.md) - 2022-10-16
 * [How to set the size of frame](https://github.com/stefanzweig/scratch/blob/main/emacs/set-frame-size.md) - 2022-11-03
 
+## python
+
+* [Attrs and Dataclass](https://github.com/stefanzweig/scratch/blob/main/python/attrs-and-dataclass.md) - 2022-10-26
+
 ## datasette
 
 * [Use SQLite-Utils Analyzing the Data in Table](https://github.com/stefanzweig/scratch/blob/main/datasette/sqlite-utils-in-memory.md) - 2022-10-26
 
-## python
+## gitlab
 
-* [Attrs and Dataclass](https://github.com/stefanzweig/scratch/blob/main/python/attrs-and-dataclass.md) - 2022-10-26
+* [How to configure the gitlab-runner in both user and root mode](https://github.com/stefanzweig/scratch/blob/main/gitlab/gitlab-runner-tips.md) - 2023-01-20
 <!-- index ends -->
