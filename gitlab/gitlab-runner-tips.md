@@ -5,3 +5,4 @@ We install the gitlab-runner on ubuntu server.
 ```shell
 sudo apt install gitlab-runner
 ```
+Then we need register the runner.
