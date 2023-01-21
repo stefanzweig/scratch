@@ -1,4 +1,4 @@
-I have written <!-- count starts -->13<!-- count ends --> small tips here. Some of them are in draft.
+I have written <!-- count starts -->14<!-- count ends --> small tips here. Some of them are in draft.
 
 <!-- index starts -->
 ## vim
@@ -43,4 +43,8 @@ I have written <!-- count starts -->13<!-- count ends --> small tips here. Some 
 ## gitlab
 
 * [How to configure the gitlab-runner in both user and root mode](https://github.com/stefanzweig/scratch/blob/main/gitlab/gitlab-runner-tips.md) - 2023-01-20
+
+## minikube
+
+* [](https://github.com/stefanzweig/scratch/blob/main/minikube/setup-minikube-env.md) - 2023-01-21
 <!-- index ends -->
