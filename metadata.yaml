@@ -34,10 +34,10 @@ databases:
         title: Stefan Zweig TIL
         sql: |-
           SELECT
-            'tag:tils.liuhaijiang.com:' || path as id,
-            title as title,
+            'tag:tils.liuhaijiang.com:' || path as atom_id,
+            title as atom_title,
             'https://tils.liuhaijiang.com/' || topic || '/' || slug as link,
-            created_utc as updated,
+            created_utc as atom_updated,
             html as content_html,
             'Stefan Zweig' as author_name,
             'https://tils.liuhaijiang.com/' as author_uri
