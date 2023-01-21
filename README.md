@@ -46,5 +46,5 @@ I have written <!-- count starts -->14<!-- count ends --> small tips here. Some 
 
 ## minikube
 
-* [](https://github.com/stefanzweig/scratch/blob/main/minikube/setup-minikube-env.md) - 2023-01-21
+* [How to install minikube?](https://github.com/stefanzweig/scratch/blob/main/minikube/setup-minikube-env.md) - 2023-01-21
 <!-- index ends -->
