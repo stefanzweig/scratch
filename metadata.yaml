@@ -34,13 +34,13 @@ databases:
         title: Stefan Zweig TIL
         sql: |-
           SELECT
-            'tag:tils.liuhaijiang.com,2022-08-28:' || path as atom_id,
-            title as atom_title,
-            'https://tils.liuhaijiang.com/' || topic || '/' || slug as atom_link,
-            created_utc as atom_updated,
-            html as atom_content_html,
-            'Stefan Zweig' as atom_author_name,
-            'https://tils.liuhaijiang.com/' as atom_author_uri
+            'tag:tils.liuhaijiang.com:' || path as id,
+            title as title,
+            'https://tils.liuhaijiang.com/' || topic || '/' || slug as link,
+            created_utc as updated,
+            html as content_html,
+            'Stefan Zweig' as author_name,
+            'https://tils.liuhaijiang.com/' as author_uri
           FROM
             til
           order by
