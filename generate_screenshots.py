@@ -17,15 +17,18 @@ def png_for_path(path):
     # Use datasette to generate HTML
     proc = subprocess.run(["datasette", ".", "--get", path], capture_output=True)
     open(page_html, "wb").write(proc.stdout)
-    # Now use puppeteer screenshot to generate a PNG
+    # Now use shot-scraper to generate a PNG
     proc2 = subprocess.run(
         [
-            "puppeteer",
-            "screenshot",
+            "shot-scraper",
+            "shot",
             page_html,
-            "--viewport",
-            "800x400",
-            "--full-page=false",
+            "-w",
+            "800",
+            "-h",
+            "400",
+            "-o",
+            "-",
         ],
         capture_output=True,
     )
@@ -47,7 +50,7 @@ def generate_screenshots(root):
         path = row["path"]
         html = row["html"]
         shot_hash = hashlib.md5((shot_html_hash + html).encode("utf-8")).hexdigest()
-        if shot_hash != row.get("shot_hash"):
+        if shot_hash != row.get("shot_hash") or not row["shot"]:
             png = png_for_path("/{}/{}".format(row["topic"], row["slug"]))
             db["til"].update(path, {"shot": png, "shot_hash": shot_hash}, alter=True)
             print(
