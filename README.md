@@ -32,13 +32,13 @@ I have written <!-- count starts -->15<!-- count ends --> small tips here. Some 
 * [How to get a link in a long line](https://github.com/stefanzweig/scratch/blob/main/emacs/get-structural-href-link-in-long-line.md) - 2022-10-16
 * [How to set the size of frame](https://github.com/stefanzweig/scratch/blob/main/emacs/set-frame-size.md) - 2022-11-03
 
-## datasette
-
-* [Use SQLite-Utils Analyzing the Data in Table](https://github.com/stefanzweig/scratch/blob/main/datasette/sqlite-utils-in-memory.md) - 2022-10-26
-
 ## python
 
 * [Attrs and Dataclass](https://github.com/stefanzweig/scratch/blob/main/python/attrs-and-dataclass.md) - 2022-10-26
+
+## datasette
+
+* [Use SQLite-Utils Analyzing the Data in Table](https://github.com/stefanzweig/scratch/blob/main/datasette/sqlite-utils-in-memory.md) - 2022-10-26
 
 ## gitlab
 
