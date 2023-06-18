@@ -9,25 +9,16 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - name: install fonts
-      run: |
-        sudo apt-get -y install fonts-wqy-microhei    
     - name: Check out repo
       uses: actions/checkout@v2
       # We need full history to introspect created/updated:
       with:
         fetch-depth: 0
-        path: main   
-    - name: Checkout scratch-db
-      uses: actions/checkout@v2
-      with:
-        repository: stefanzweig/scratch-db
-        path: scratch-db
-        token: ${{ secrets.ACCESS_TOKEN }}  
+        path: main
     - name: Set up Python
       uses: actions/setup-python@v1
       with:
-        python-version: 3.9
+        python-version: 3.8
     - uses: actions/cache@v2
       name: Configure pip caching
       with:
@@ -35,12 +26,6 @@ jobs:
         key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
         restore-keys: |
           ${{ runner.os }}-pip-
-    - uses: actions/cache@v2
-      with:
-        path: ~/.npm
-        key: ${{ runner.os }}-node-
-        restore-keys: |
-          ${{ runner.os }}-node-
     - name: Cache Playwright browsers
       uses: actions/cache@v3
       with:
@@ -53,13 +38,6 @@ jobs:
     - name: Install Playwright dependencies
       run: |
         shot-scraper install
-    - name: Install npm dependencies
-      run: sudo npm install -g puppeteer-cli --unsafe-perm=true
-    - name: Download previous database unless REBUILD in commit message
-      if: |-
-        !contains(github.event.head_commit.message, 'REBUILD')
-      run: curl --fail -o main/scratch.db  https://github.com/stefanzweig/scratch-db/raw/main/scratch.db
-      continue-on-error: true
     - name: Build database
       run: |-
         cd main
@@ -72,6 +50,7 @@ jobs:
       run: |-
         cd main
         python generate_screenshots.py
+        sqlite-utils vacuum scratch.db
     - name: Update README
       run: |-
         cd main
@@ -81,23 +60,15 @@ jobs:
       run: |-
         cd main
         git diff
-        git config --global user.email "readme-bot@zweig.net"
+        git config --global user.email "actions@users.noreply.github.com"
         git config --global user.name "README-bot"
         git diff --quiet || (git add README.md && git commit -m "Updated README")
         git push
-    - name: Save scratch.db to stefanzweig/scratch-db
-      run: |-
-        cd scratch-db
-        cp ../main/scratch.db .
-        git add scratch.db
-        git commit --amend --no-edit
-        git push --force
     - name: Deploy Datasette using Vercel
       env:
         NOW_TOKEN: ${{ secrets.NOW_TOKEN }}
       run: |-
         cd main
-        # wget https://latest.datasette.io/fixtures.db
         datasette publish vercel scratch.db \
           --token $NOW_TOKEN \
           --project scratch \
@@ -105,12 +76,12 @@ jobs:
           --metadata metadata.yaml \
           --static static:static \
           --install datasette-template-sql \
+          --install "datasette-sitemap>=1.0" \
           --install "datasette-atom>=0.7" \
           --install datasette-json-html \
           --install beautifulsoup4 \
           --install "datasette-debug-asgi>=1.1" \
-          --install "datasette-graphql>=0.12" \
-          --install datasette-media \
+          --install "datasette-graphql>=2.2" \
           --install datasette-block-robots \
           --plugins-dir plugins \
           --template-dir templates \
