@@ -38,6 +38,11 @@ jobs:
     - name: Install Playwright dependencies
       run: |
         shot-scraper install
+    - name: Download previous database unless REBUILD in commit message
+      if: |-
+        !contains(github.event.head_commit.message, 'REBUILD')
+      run: curl --fail -o main/scratch.db  https://github.com/stefanzweig/scratch-db/raw/main/scratch.db
+      continue-on-error: true        
     - name: Build database
       run: |-
         cd main
@@ -64,6 +69,13 @@ jobs:
         git config --global user.name "README-bot"
         git diff --quiet || (git add README.md && git commit -m "Updated README")
         git push
+    - name: Save scratch.db to stefanzweig/scratch-db
+      run: |-
+        cd scratch-db
+        cp ../main/scratch.db .
+        git add scratch.db
+        git commit --amend --no-edit
+        git push --force
     - name: Deploy Datasette using Vercel
       env:
         NOW_TOKEN: ${{ secrets.NOW_TOKEN }}
