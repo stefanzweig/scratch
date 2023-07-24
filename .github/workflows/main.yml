@@ -58,6 +58,9 @@ jobs:
         cd main
         datasette . --get / | grep "Stefan Scratches"
     - name: Generate missing screenshots
+      env:
+        AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
       run: |-
         cd main
         python generate_screenshots.py
@@ -75,6 +78,12 @@ jobs:
         git config --global user.name "README-bot"
         git diff --quiet || (git add README.md && git commit -m "Updated README")
         git push
+    - name: Upload latest scratch.db to the S3 bucket
+      env:
+        AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+      run: |-
+        s3-credentials put-object tils.liuhaijiang.com scratch.db main/scratch.db
     - name: Save scratch.db to stefanzweig/scratch-db
       run: |-
         cd scratch-db

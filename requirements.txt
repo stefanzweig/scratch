@@ -9,3 +9,4 @@ datasette-graphql
 datasette-media
 datasette-block-robots
 shot-scraper
+s3-credentials
