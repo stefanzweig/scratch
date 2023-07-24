@@ -46,7 +46,7 @@ databases:
           order by
             created_utc desc
           limit
-            15
+            20
     tables:
       til:
         sort_desc: updated_utc
