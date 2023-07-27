@@ -1,4 +1,4 @@
-I have written <!-- count starts -->18<!-- count ends --> small tips here. Some of them are in draft.
+I have written <!-- count starts -->19<!-- count ends --> small tips here. Some of them are in draft.
 
 <!-- index starts -->
 ## vim
@@ -54,4 +54,8 @@ I have written <!-- count starts -->18<!-- count ends --> small tips here. Some 
 * [How to handle the big data with sqlite and pandas](https://github.com/stefanzweig/scratch/blob/main/sqlite/big_data.md) - 2023-03-21
 * [How to clean the database](https://github.com/stefanzweig/scratch/blob/main/sqlite/vacuum_data.md) - 2023-06-18
 * [DateTime in SQLite](https://github.com/stefanzweig/scratch/blob/main/sqlite/datetime_in_sqlite.md) - 2023-06-30
+
+## ahk
+
+* [How to center the active window with AHK](https://github.com/stefanzweig/scratch/blob/main/ahk/center-window-with-ahk.md) - 2023-07-27
 <!-- index ends -->
