@@ -1,4 +1,4 @@
-I have written <!-- count starts -->20<!-- count ends --> small tips here. Some of them are in draft.
+I have written <!-- count starts -->21<!-- count ends --> small tips here. Some of them are in draft.
 
 <!-- index starts -->
 ## vim
@@ -62,4 +62,8 @@ I have written <!-- count starts -->20<!-- count ends --> small tips here. Some 
 ## cmake
 
 * [How to make cmake make things with gcc](https://github.com/stefanzweig/scratch/blob/main/cmake/cmake_works_with_mingw.md) - 2023-08-24
+
+## linux
+
+* [Show the workspaces in external monitor only](https://github.com/stefanzweig/scratch/blob/main/linux/show-in-monitor-only.md) - 2023-08-28
 <!-- index ends -->
