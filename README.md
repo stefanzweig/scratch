@@ -13,13 +13,13 @@ I have written <!-- count starts -->21<!-- count ends --> small tips here. Some 
 
 * [How to sync the migration files in devlopment with django?](https://github.com/stefanzweig/scratch/blob/main/developmemt/how-to-sync-migrations-in-django.md) - 2022-09-17
 
-## podcast
-
-* [Talk Python To Me](https://github.com/stefanzweig/scratch/blob/main/podcast/talk-python-to-me.md) - 2022-10-07
-
 ## reading
 
 * [How I Side Project](https://github.com/stefanzweig/scratch/blob/main/reading/how-i-side-project.md) - 2022-10-07
+
+## podcast
+
+* [Talk Python To Me](https://github.com/stefanzweig/scratch/blob/main/podcast/talk-python-to-me.md) - 2022-10-07
 
 ## django
 
