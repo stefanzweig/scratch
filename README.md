@@ -1,4 +1,4 @@
-I have written <!-- count starts -->22<!-- count ends --> small tips here. Some of them are in draft.
+I have written <!-- count starts -->24<!-- count ends --> small tips here. Some of them are in draft.
 
 <!-- index starts -->
 ## vim
@@ -31,6 +31,7 @@ I have written <!-- count starts -->22<!-- count ends --> small tips here. Some 
 
 * [How to get a link in a long line](https://github.com/stefanzweig/scratch/blob/main/emacs/get-structural-href-link-in-long-line.md) - 2022-10-16
 * [How to set the size of frame](https://github.com/stefanzweig/scratch/blob/main/emacs/set-frame-size.md) - 2022-11-03
+* [Indentation for Python in Babel Block](https://github.com/stefanzweig/scratch/blob/main/emacs/org-babel-python-indentation.md) - 2024-01-23
 
 ## datasette
 
@@ -67,4 +68,8 @@ I have written <!-- count starts -->22<!-- count ends --> small tips here. Some 
 ## linux
 
 * [Show the workspaces in external monitor only](https://github.com/stefanzweig/scratch/blob/main/linux/show-in-monitor-only.md) - 2023-08-28
+
+## windows
+
+* [Launch Apps in Startup](https://github.com/stefanzweig/scratch/blob/main/windows/startup.md) - 2024-01-23
 <!-- index ends -->
