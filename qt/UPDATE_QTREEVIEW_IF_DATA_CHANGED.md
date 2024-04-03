@@ -1,7 +1,7 @@
 
-# HOW TO UPDATE QTREEVIEW IF DATA CHANGED?
+# HOW TO UPDATE QTREEVIEW IF DATA CHANGED
 
-**Method 1: Using signals and slots**
+## Method 1: Using signals and slots
 
 1. Define a signal in the model class to emit when data changes:
    ```cpp
@@ -44,7 +44,7 @@
    }
    ```
 
-**Method 2: Using the dataChanged() method**
+## Method 2: Using the dataChanged() method
 
 1. Call the dataChanged() method of the model directly when data changes:
    ```cpp
@@ -68,7 +68,7 @@
    };
    ```
 
-**Additional notes:**
+## Additional notes:
 
 * The `dataChanged()` signal/method takes three parameters: the top-left and bottom-right indexes of the changed range, and a vector of roles that were changed.
 * You can update only the necessary parts of the view by checking the `roles` parameter and the indexes.
