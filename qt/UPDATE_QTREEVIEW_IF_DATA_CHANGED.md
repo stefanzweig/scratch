@@ -1,5 +1,5 @@
 
-**HOW TO UPDATE QTREEVIEW IF DATA CHANGED?**
+# HOW TO UPDATE QTREEVIEW IF DATA CHANGED?
 
 **Method 1: Using signals and slots**
 
