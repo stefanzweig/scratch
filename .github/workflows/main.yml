@@ -99,7 +99,7 @@ jobs:
         datasette publish vercel scratch.db \
           --token $NOW_TOKEN \
           --project scratch \
-          --scope stefanzweig \
+          --scope szweig \
           --metadata metadata.yaml \
           --static static:static \
           --install datasette-template-sql \
