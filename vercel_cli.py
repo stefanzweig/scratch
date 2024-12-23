@@ -287,7 +287,7 @@ def _publish_vercel2(
         else:
             # Run the deploy with Vercel
             cmd = ["vercel", "--yes"]
-            cmdlink = ["vercel link", "--yes"]
+            cmdlink = ["vercel", "link", "--yes"]
             cmdlink.extend(["--project", project])
             if debug:
                 cmd.append("--debug")
