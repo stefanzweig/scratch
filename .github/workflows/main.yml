@@ -23,9 +23,9 @@ jobs:
         path: scratch-db
         token: ${{ secrets.ACCESS_TOKEN }}        
     - name: Set up Python
-      uses: actions/setup-python@v1
+      uses: actions/setup-python@v2
       with:
-        python-version: 3.12
+        python-version: '3.12'
     - name: Install Vercel CLI
       run: npm install --global vercel@latest
     - uses: actions/cache@v3
