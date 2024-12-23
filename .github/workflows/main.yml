@@ -107,8 +107,4 @@ jobs:
           --token $NOW_TOKEN \
           --project scratch \
           --scope stefanzweigs-projects \
-          --metadata metadata.yaml \
-          --static static:static \
-          --plugins-dir plugins \
-          --template-dir templates \
           --public
