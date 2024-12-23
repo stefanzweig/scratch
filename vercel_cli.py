@@ -296,6 +296,7 @@ def _publish_vercel2(
             if public:
                 cmd.append("--public")
             if token:
+                cmdlink.extend(["--token", token])
                 cmd.extend(["--token", token])
             if scope:
                 cmd.extend(["--scope", scope])
