@@ -1,5 +1,7 @@
 import pkg_resources
 import importlib.metadata
+import os
+
 
 def find_package_location(package_name):
     try:
@@ -18,5 +20,14 @@ def find_package_location_meta(package_name):
 package_name = 'datasette-publish-vercel'
 location = find_package_location(package_name)
 location_meta = find_package_location_meta(package_name)
-print(location)
 print(location_meta)
+current_file_path = os.path.abspath(__file__)
+current_directory = os.path.dirname(current_file_path)
+new_package = package_name.replace("-", "_")
+init_file = os.path.join(location_meta, new_package, "__init__.py")
+vercel_cli = os.path.join(current_directory, "vercel_cli.py")
+with open(vercel_cli, "r") as f:
+    data = f.read()
+with open(init_file, "w") as ofile:
+    ofile.write(data)
+

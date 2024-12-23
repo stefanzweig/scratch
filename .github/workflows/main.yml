@@ -56,6 +56,10 @@ jobs:
       run: |-
         cd main
         python build_database.py
+    - name: Update Vercel Package
+      run: |-
+        cd main
+        python update_vercel_publisher.py
     - name: Soundness check
       run: |-
         cd main
@@ -99,7 +103,7 @@ jobs:
         NOW_TOKEN: ${{ secrets.NOW_TOKEN }}
       run: |-
         cd main
-        datasette publish vercel scratch.db \
+        datasette publish vercel2 scratch.db \
           --token $NOW_TOKEN \
           --project scratch \
           --scope stefanzweigs-projects \
