@@ -287,7 +287,8 @@ def _publish_vercel2(
         else:
             # Run the deploy with Vercel
             cmd = ["vercel", "--yes"]
-            cmd.extend(["--name", project])
+            cmdlink = ["vercel link", "--yes"]
+            cmdlink.extend(["--project", project])
             if debug:
                 cmd.append("--debug")
             if not no_prod:
@@ -300,7 +301,9 @@ def _publish_vercel2(
                 cmd.extend(["--scope", scope])
             # Add the secret
             cmd.extend(["--env", "DATASETTE_SECRET={}".format(secret)])
+            cmdlink.extend(["--env", "DATASETTE_SECRET={}".format(secret)])
             try:
+                run(cmdlink,check=True)
                 run(cmd, check=True)
             except CalledProcessError as ex:
                 raise click.ClickException(str(ex))
