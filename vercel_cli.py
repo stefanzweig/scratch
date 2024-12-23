@@ -302,7 +302,6 @@ def _publish_vercel2(
                 cmd.extend(["--scope", scope])
             # Add the secret
             cmd.extend(["--env", "DATASETTE_SECRET={}".format(secret)])
-            cmdlink.extend(["--env", "DATASETTE_SECRET={}".format(secret)])
             try:
                 run(cmdlink,check=True)
                 run(cmd, check=True)
