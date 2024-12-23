@@ -214,7 +214,6 @@ def _publish_vercel2(
 
     vercel_json_content = json.dumps(
         {
-            "name": project,
             "builds": [{"src": "index.py", "use": "@vercel/python"}],
             "routes": [{"src": "(.*)", "dest": "index.py"}],
         },
@@ -288,6 +287,7 @@ def _publish_vercel2(
         else:
             # Run the deploy with Vercel
             cmd = ["vercel", "--yes"]
+            cmd.extend(["--name", project])
             if debug:
                 cmd.append("--debug")
             if not no_prod:
