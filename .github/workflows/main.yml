@@ -103,8 +103,20 @@ jobs:
         NOW_TOKEN: ${{ secrets.NOW_TOKEN }}
       run: |-
         cd main
-        datasette publish vercel2 scratch.db \
+        datasette publish vercel scratch.db \
           --token $NOW_TOKEN \
-          --project scratch \
+          --project datasette-now-v2 \
           --scope stefanzweigs-projects \
+          --metadata metadata.yaml \
+          --static static:static \
+          --install datasette-template-sql \
+          --install "datasette-sitemap>=1.0" \
+          --install "datasette-atom>=0.7" \
+          --install datasette-json-html \
+          --install beautifulsoup4 \
+          --install "datasette-debug-asgi>=1.1" \
+          --install "datasette-graphql>=2.2" \
+          --install datasette-block-robots \
+          --plugins-dir plugins \
+          --template-dir templates \
           --public
