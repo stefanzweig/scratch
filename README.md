@@ -1,4 +1,4 @@
-I have written <!-- count starts -->25<!-- count ends --> small tips here. Some of them are in draft.
+I have written <!-- count starts -->26<!-- count ends --> small tips here. Some of them are in draft.
 
 <!-- index starts -->
 ## vim
@@ -36,6 +36,7 @@ I have written <!-- count starts -->25<!-- count ends --> small tips here. Some 
 ## python
 
 * [Attrs and Dataclass](https://github.com/stefanzweig/scratch/blob/main/python/attrs-and-dataclass.md) - 2022-10-26
+* [fix datasette-publish-vercel in github actions](https://github.com/stefanzweig/scratch/blob/main/python/replace_code.md) - 2024-12-24
 
 ## datasette
 
