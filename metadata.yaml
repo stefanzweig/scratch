@@ -31,7 +31,7 @@ databases:
         order by
           til_fts.rank limit 20
       feed:
-        title: Stefan Zweig TIL
+        title: Haijiang TIL
         sql: |-
           SELECT
             'tag:til.liuhaijiang.com:' || path as atom_id,
@@ -39,7 +39,7 @@ databases:
             'https://til.liuhaijiang.com/' || topic || '/' || slug as atom_link,
             created_utc as atom_updated,
             html as atom_content_html,
-            'Stefan Zweig' as author_name,
+            'Haijiang' as author_name,
             'https://til.liuhaijiang.com/' as author_uri
           FROM
             til

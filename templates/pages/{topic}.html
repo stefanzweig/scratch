@@ -5,7 +5,7 @@
 """, {"topic": topic}, database="scratch")
 %}
 
-{% block title %}Stefan Zweig: TILs on {{ topic }}{% endblock %}<!DOCTYPE html>
+{% block title %}Haijiang: TILs on {{ topic }}{% endblock %}<!DOCTYPE html>
 
 {% block body %}
 
@@ -13,7 +13,7 @@
     {{ raise_404("No TILs found") }}
 {% endif %}
 
-<h1>Stefan Zweig: TILs on {{ topic }}</h1>
+<h1>Haijiang: TILs on {{ topic }}</h1>
 
 {% for til in tils %}
     <h3><span class="topic">{{ til.topic }}</span> <a href="/{{ til.topic }}/{{ til.slug }}">{{ til.title }}</a> - {{ til.created[:10] }}</h3>
