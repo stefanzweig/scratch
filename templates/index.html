@@ -1,6 +1,6 @@
 {% extends "til_base.html" %}
 
-{% block title %}Stefan Scratches{% endblock %}<!DOCTYPE html>
+{% block title %}My TILs{% endblock %}<!DOCTYPE html>
 
 {% block extra_head %}
 <link href="https://github.com/stefanzweig" rel="me">
@@ -48,7 +48,7 @@ h1 {
 
 {% block body %}
 {% set til_count = sql("select count(*) from til", database="scratch")[0][0] %}
-<h1>My Scratches</h1>
+<h1>My TILs</h1>
 <p>Things I've learned, collected in <a href="https://github.com/stefanzweig/scratch">stefanzweig/scratch</a>.</p>
 
 <p><a style="text-decoration: none" href="/scratch/feed.atom" title="Atom feed"><svg xmlns="http://www.w3.org/2000/svg" width="14px" height="14px" viewBox="0 0 256 256">
