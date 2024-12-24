@@ -63,7 +63,7 @@ jobs:
     - name: Soundness check
       run: |-
         cd main
-        datasette . --get / | grep "Stefan Scratches"
+        datasette . --get / | grep "My TILs"
     - name: Generate missing screenshots
       env:
         AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
