@@ -103,7 +103,7 @@ jobs:
         NOW_TOKEN: ${{ secrets.NOW_TOKEN }}
       run: |-
         cd main
-        datasette publish vercel scratch.db \
+        datasette publish vercel2 scratch.db \
           --token $NOW_TOKEN \
           --project datasette-now-v2 \
           --scope stefanzweigs-projects \
