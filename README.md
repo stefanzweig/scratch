@@ -11,7 +11,7 @@ I have written <!-- count starts -->26<!-- count ends --> small tips here. Some 
 
 ## developmemt
 
-* [How to sync the migration files in devlopment with django?](https://github.com/stefanzweig/scratch/blob/main/developmemt/how-to-sync-migrations-in-django.md) - 2022-09-17
+* [How to sync the migration files in development with django?](https://github.com/stefanzweig/scratch/blob/main/developmemt/how-to-sync-migrations-in-django.md) - 2022-09-17
 
 ## podcast
 
