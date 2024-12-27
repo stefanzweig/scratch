@@ -10,7 +10,7 @@ cmake -G"Unix Makefiles" ../
 cmake -G"MinGW Makefiles" ../
 ```
 
-A Makefile with gcc is made. The the build command works.
+A Makefile with gcc is made. The build command works.
 
 ```shell
 cmake --build .
