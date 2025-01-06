@@ -1,4 +1,4 @@
-I have written <!-- count starts -->26<!-- count ends --> small tips here. Some of them are in draft.
+I have written <!-- count starts -->27<!-- count ends --> small tips here. Some of them are in draft.
 
 <!-- index starts -->
 ## vim
@@ -43,6 +43,7 @@ I have written <!-- count starts -->26<!-- count ends --> small tips here. Some 
 * [Use SQLite-Utils Analyzing the Data in Table](https://github.com/stefanzweig/scratch/blob/main/datasette/sqlite-utils-in-memory.md) - 2022-10-26
 * [Learn to Use Datasette Dashboard](https://github.com/stefanzweig/scratch/blob/main/datasette/datasette-dashboard.md) - 2023-06-30
 * [SQLite-Utils Insert Files into database](https://github.com/stefanzweig/scratch/blob/main/datasette/sqlite-utils-insert-files.md) - 2024-01-21
+* [how to make field with " into numeric one](https://github.com/stefanzweig/scratch/blob/main/datasette/csv-conversion.md) - 2025-01-06
 
 ## gitlab
 
