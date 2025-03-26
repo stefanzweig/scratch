@@ -1,4 +1,4 @@
-I have written <!-- count starts -->27<!-- count ends --> small tips here. Some of them are in draft.
+I have written <!-- count starts -->28<!-- count ends --> small tips here. Some of them are in draft.
 
 <!-- index starts -->
 ## vim
@@ -13,13 +13,13 @@ I have written <!-- count starts -->27<!-- count ends --> small tips here. Some 
 
 * [How to sync the migration files in development with django?](https://github.com/stefanzweig/scratch/blob/main/developmemt/how-to-sync-migrations-in-django.md) - 2022-09-17
 
-## podcast
-
-* [Talk Python To Me](https://github.com/stefanzweig/scratch/blob/main/podcast/talk-python-to-me.md) - 2022-10-07
-
 ## reading
 
 * [How I Side Project](https://github.com/stefanzweig/scratch/blob/main/reading/how-i-side-project.md) - 2022-10-07
+
+## podcast
+
+* [Talk Python To Me](https://github.com/stefanzweig/scratch/blob/main/podcast/talk-python-to-me.md) - 2022-10-07
 
 ## django
 
@@ -78,4 +78,8 @@ I have written <!-- count starts -->27<!-- count ends --> small tips here. Some 
 ## powershell
 
 * [How to remove the folder recursively](https://github.com/stefanzweig/scratch/blob/main/powershell/remove-folder.md) - 2024-12-13
+
+## xmake
+
+* [Tasks in xmake](https://github.com/stefanzweig/scratch/blob/main/xmake/xmake-with-task.md) - 2025-03-26
 <!-- index ends -->
