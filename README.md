@@ -1,4 +1,4 @@
-I have written <!-- count starts -->28<!-- count ends --> small tips here. Some of them are in draft.
+I have written <!-- count starts -->29<!-- count ends --> small tips here. Some of them are in draft.
 
 <!-- index starts -->
 ## vim
@@ -82,4 +82,8 @@ I have written <!-- count starts -->28<!-- count ends --> small tips here. Some 
 ## xmake
 
 * [Tasks in xmake](https://github.com/stefanzweig/scratch/blob/main/xmake/xmake-with-task.md) - 2025-03-26
+
+## jq
+
+* [How to parse deepseek archive in JSON format](https://github.com/stefanzweig/scratch/blob/main/jq/jq-parse-deepseek.md) - 2026-01-01
 <!-- index ends -->
