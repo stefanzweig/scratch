@@ -1,4 +1,4 @@
-I have written <!-- count starts -->29<!-- count ends --> small tips here. Some of them are in draft.
+I have written <!-- count starts -->31<!-- count ends --> small tips here. Some of them are in draft.
 
 <!-- index starts -->
 ## vim
@@ -8,6 +8,8 @@ I have written <!-- count starts -->29<!-- count ends --> small tips here. Some 
 ## git
 
 * [How to find out files that are deleted](https://github.com/stefanzweig/scratch/blob/main/git/how-to-find-out-deleted-file.md) - 2022-09-14
+* [How to git commit automatically](https://github.com/stefanzweig/scratch/blob/main/git/git-commit-with-action.md) - 2026-01-02
+* [How to commit with timestamp in message](https://github.com/stefanzweig/scratch/blob/main/git/git commit with timestamp.md) - 2026-01-02
 
 ## developmemt
 
