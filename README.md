@@ -9,7 +9,7 @@ I have written <!-- count starts -->31<!-- count ends --> small tips here. Some 
 
 * [How to find out files that are deleted](https://github.com/stefanzweig/scratch/blob/main/git/how-to-find-out-deleted-file.md) - 2022-09-14
 * [How to git commit automatically](https://github.com/stefanzweig/scratch/blob/main/git/git-commit-with-action.md) - 2026-01-02
-* [How to commit with timestamp in message](https://github.com/stefanzweig/scratch/blob/main/git/git commit with timestamp.md) - 2026-01-02
+* [How to commit with timestamp in message](https://github.com/stefanzweig/scratch/blob/main/git/git-commit-with-timestamp.md) - 2026-01-02
 
 ## developmemt
 
